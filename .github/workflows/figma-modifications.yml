@@ -29,6 +29,8 @@ jobs:
         if: steps.changed-files-specific.outputs.any_changed == 'true'
         run: |
           npm install && npm run build-tw
+          git config --global user.name "${{ secret.GH_USERNAME }}"
+          git config --global user.email "${{ secret.GH_USERMAIL }}"
           git add
           git commit -m "ci(theme): Update tailwind.config.js"
           git push
