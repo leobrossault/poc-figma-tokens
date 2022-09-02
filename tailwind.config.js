@@ -3,7 +3,9 @@ module.exports = {
   "darkMode": false,
   "theme": {
     "color": {
-      "testcolor": "#21d513"
+      "testcolor": "#21d513",
+      "rouge": "#f82f2f",
+      "blue": "#2111e9"
     },
     "spacing": {
       "testTitle": 100
