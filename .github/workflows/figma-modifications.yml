@@ -18,15 +18,12 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
-      - name: Check changed files
+      - name: Get changed files using defaults
+        id: changed-files
         uses: tj-actions/changed-files@v29.0.2
-        id: changed-files-specific
-        with:
-          files: |
-            tokens.json
 
       - name: Build tailwind.config
-        if: steps.changed-files-specific.outputs.any_changed == 'true'
+        if: contains(steps.changed-files.outputs.modified_files, 'tokens.json')
         run: |
           echo ${{ steps.changed-files-specific.outputs.any_changed }}
           npm install && npm run build-tw
