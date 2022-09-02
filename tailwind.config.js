@@ -9,7 +9,8 @@ module.exports = {
       "pink": "#ff20e9f2"
     },
     "spacing": {
-      "testTitle": 100
+      "testTitle": 100,
+      "l": 300
     },
     "sizing": {
       "m": 1000
