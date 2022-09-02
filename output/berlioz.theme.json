@@ -5,14 +5,14 @@
     "blue": "#2111e9",
     "pink": "#ff20e9f2"
   },
-  "spacing": {
-    "testTitle": 100,
-    "l": 300
-  },
-  "sizing": {
-    "m": 1000
-  },
   "fontFamily": {
     "primary": "Arial"
+  },
+  "sizing": {
+    "m": "1000px"
+  },
+  "spacing": {
+    "testTitle": "100px",
+    "l": "300px"
   }
 }

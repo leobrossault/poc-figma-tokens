@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const tokens = require('../output/global.json')
+const tokens = require('../themes/global-formatted.json')
 const { filterTokensByType } = require('../helpers/formats.js')
 const { BERLIOZ_THEME_FILE, MATCHES } = require('../constants/index.js')
 
@@ -19,13 +19,15 @@ const registerTypes = function (tokens) {
 
 function createTailwindConfig(sections) {
   return JSON.stringify(
-    sections.reduce(
-      (obj, section) => ({
-        ...obj,
-        [MATCHES[section] || section]: filterTokensByType(section, tokens)
-      }),
-      {}
-    ),
+    sections
+      .sort((a, b) => a.localeCompare(b))
+      .reduce(
+        (obj, section) => ({
+          ...obj,
+          [MATCHES[section] || section]: filterTokensByType(section, tokens)
+        }),
+        {}
+      ),
     null,
     2
   )

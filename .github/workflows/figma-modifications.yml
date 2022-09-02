@@ -28,6 +28,7 @@ jobs:
       - name: Build tailwind.config
         if: steps.changed-files-specific.outputs.any_changed == 'true'
         run: |
+          echo ${{ steps.changed-files-specific.outputs.any_changed }}
           npm install && npm run build-tw
           git config --global user.name "${{ secrets.GH_USERNAME }}"
           git config --global user.email "${{ secrets.GH_USERMAIL }}"

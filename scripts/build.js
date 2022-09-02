@@ -4,16 +4,16 @@ const { createArray } = require('../helpers/formats.js')
 StyleDictionaryPackage.registerTransform({
   name: 'sizes/px',
   type: 'value',
-  matcher: function (prop) {
+  matcher: prop => {
     return [
       'fontSizes',
       'spacing',
       'borderRadius',
       'borderWidth',
       'sizing'
-    ].includes(prop.attributes.category)
+    ].includes(prop.original.type)
   },
-  transformer: function (prop) {
+  transformer: prop => {
     return `${parseFloat(prop.original.value)}px`
   }
 })
@@ -27,10 +27,10 @@ function getStyleDictionaryConfig() {
     platforms: {
       web: {
         transforms: ['attribute/cti', 'name/cti/kebab', 'sizes/px'],
-        buildPath: `output/`,
+        buildPath: `themes/`,
         files: [
           {
-            destination: 'global.json',
+            destination: 'global-formatted.json',
             format: 'createArray'
           }
         ]
