@@ -1,19 +1,72 @@
 {
+  "borderRadius": {
+    "borderRadiusNone": "0px",
+    "borderRadiusS": "4px",
+    "borderRadiusM": "8px"
+  },
   "color": {
-    "testcolor": "#21d513",
-    "rouge": "#f82f2f",
-    "blue": "#2111e9",
-    "pink": "#ff20e9f2"
+    "primary400": "#e94d53",
+    "primary500": "#e42128",
+    "primary600": "#c21b21",
+    "secondary400": "#2f323a",
+    "secondary500": "#18191d",
+    "secondary600": "#131417",
+    "tertiary400": "#998B6C",
+    "tertiary500": "#806e47",
+    "tertiary600": "#665839",
+    "neutral100": "#f8fafe",
+    "neutral200": "#eef0f6",
+    "neutral300": "#e1e4ee",
+    "neutral400": "#adb1be",
+    "neutral500": "#767d92",
+    "neutral600": "#5e6475",
+    "neutral700": "#474b58",
+    "neutral800": "#2f323a",
+    "neutral900": "#18191d",
+    "semanticSuccess": "#00a33e",
+    "semanticError": "#f02a1f",
+    "semanticWarning": "#ff9c07",
+    "shadesWhite": "#ffffff",
+    "shadesBlack": "#000000",
+    "overlay500": "#15192599"
   },
   "fontFamily": {
-    "primary": "Arial",
-    "secondary": "Lato"
+    "fontfamiliesLato": "Lato"
   },
-  "sizing": {
-    "m": "1000px"
+  "fontSizes": {
+    "fontsize3": "20px",
+    "fontsize4": "24px",
+    "fontsize5": "28px",
+    "fontsize6": "32px",
+    "fontsizePSmall": "14px",
+    "fontsizePBase": "16px",
+    "fontsizePLarge": "18px"
   },
-  "spacing": {
-    "testTitle": "100px",
-    "l": "300px"
+  "fontWeights": {
+    "fontweightsRegular": "Regular",
+    "fontweightsBold": "Bold",
+    "fontweightsExtrabold": "ExtraBold",
+    "fontweightsItalic": "Italic"
+  },
+  "letterSpacing": {
+    "letterspacing0": 0.25,
+    "letterspacing2": 3,
+    "letterspacingNone": 0
+  },
+  "lineHeights": {
+    "lineheights0": 40,
+    "lineheights1": 36,
+    "lineheights2": 32,
+    "lineheights3": 24,
+    "lineheights4": 20,
+    "lineheights5": 28
+  },
+  "textCase": {
+    "textcaseNone": "none",
+    "textcaseUppercase": "uppercase"
+  },
+  "textDecoration": {
+    "textdecorationNone": "none",
+    "textdecorationUnderline": "underline"
   }
 }

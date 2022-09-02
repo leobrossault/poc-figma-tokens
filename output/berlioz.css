@@ -1,0 +1,208 @@
+.headingh1 {
+  font-family: "Lato";
+  font-weight: "ExtraBold";
+  line-height: 40;
+  font-size: 32;
+}
+.headingh2 {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 36;
+  font-size: 28;
+}
+.headingh3 {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 32;
+  font-size: 24;
+}
+.headingh4 {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 24;
+  font-size: 20;
+}
+.headingSmallh1S {
+  font-family: "Lato";
+  font-weight: "ExtraBold";
+  line-height: 36;
+  font-size: 28;
+}
+.headingSmallh2S {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 32;
+  font-size: 24;
+}
+.headingSmallh3S {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 24;
+  font-size: 20;
+}
+.headingSmallh4S {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 20;
+  font-size: 18;
+}
+.subheading01Regular {
+  font-family: "Lato";
+  font-weight: "Regular";
+  line-height: 24;
+  font-size: 20;
+}
+.subheading01Bold {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 24;
+  font-size: 20;
+}
+.subheadingSmall01SRegular {
+  font-family: "Lato";
+  font-weight: "Regular";
+  line-height: 20;
+  font-size: 18;
+}
+.subheadingSmall01SBold {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 20;
+  font-size: 18;
+}
+.paragraphp01regular {
+  font-family: "Lato";
+  font-weight: "Regular";
+  line-height: 28;
+  font-size: 18;
+}
+.paragraphp01bold {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 28;
+  font-size: 18;
+}
+.paragraphp01italic {
+  font-family: "Lato";
+  font-weight: "Italic";
+  line-height: 28;
+  font-size: 18;
+}
+.paragraphp01underline {
+  font-family: "Lato";
+  font-weight: "Regular";
+  line-height: 28;
+  font-size: 18;
+  text-decoration: "underline";
+}
+.paragraphp02regular {
+  font-family: "Lato";
+  font-weight: "Regular";
+  line-height: 24;
+  font-size: 16;
+}
+.paragraphp02bold {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 24;
+  font-size: 16;
+}
+.paragraphp02italic {
+  font-family: "Lato";
+  font-weight: "Italic";
+  line-height: 24;
+  font-size: 16;
+}
+.paragraphp02underline {
+  font-family: "Lato";
+  font-weight: "Regular";
+  line-height: 24;
+  font-size: 16;
+  text-decoration: "underline";
+}
+.paragraphp03regular {
+  font-family: "Lato";
+  font-weight: "Regular";
+  line-height: 20;
+  font-size: 14;
+}
+.paragraphp03bold {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 20;
+  font-size: 14;
+}
+.paragraphp03italic {
+  font-family: "Lato";
+  font-weight: "Italic";
+  line-height: 20;
+  font-size: 14;
+}
+.paragraphp03underline {
+  font-family: "Lato";
+  font-weight: "Regular";
+  line-height: 20;
+  font-size: 14;
+  text-decoration: "underline";
+}
+.tagt01regular {
+  font-family: "Lato";
+  font-weight: "Regular";
+  line-height: 24;
+  font-size: 16;
+  letter-spacing: 3;
+  text-case: "uppercase";
+}
+.tagt01bold {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 24;
+  font-size: 16;
+  letter-spacing: 3;
+  text-case: "uppercase";
+}
+.tagt02regular {
+  font-family: "Lato";
+  font-weight: "Regular";
+  line-height: 20;
+  font-size: 14;
+  letter-spacing: 3;
+  text-case: "uppercase";
+}
+.tagt02bold {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 20;
+  font-size: 14;
+  letter-spacing: 3;
+  text-case: "uppercase";
+}
+.buttonl {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 28;
+  font-size: 18;
+}
+.buttonm {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 24;
+  font-size: 16;
+}
+.buttons {
+  font-family: "Lato";
+  font-weight: "Bold";
+  line-height: 20;
+  font-size: 14;
+}
+.primaryButton {
+  horizontal-padding: 24;
+  vertical-padding: 8;
+  border-radius: 4;
+  height: 40;
+  font-sizes: 16;
+  line-heights: 24;
+  fill: "#e42128";
+  font-families: "Lato";
+  text-case: "none";
+}

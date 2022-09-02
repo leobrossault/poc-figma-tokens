@@ -1,5 +1,4 @@
 const { camelify } = require('./string.js')
-const { MATCHES } = require('../constants')
 
 function deepen(obj) {
   const result = {}
