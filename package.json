@@ -6,7 +6,7 @@
   "scripts": {
     "theme-isolation": "./node_modules/.bin/token-transformer tokens.json themes/global.json Group",
     "theme-formatted": "node scripts/build.js",
-    "build-tw": "npm run theme-isolation && npm run theme-formatted && node ./scripts/tw.js"
+    "build-tw": "npm run theme-isolation && npm run theme-formatted && node scripts/generate-theme.js"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,5 @@
 const { camelify } = require('./string.js')
+const { MATCHES } = require('../constants')
 
 function deepen(obj) {
   const result = {}
@@ -28,7 +29,10 @@ function createArray({ dictionary }) {
 function filterTokensByType(type, tokens) {
   const obj = tokens.reduce((acc, cur) => {
     if (cur.type === type) {
-      acc[camelify(cur.path.join('.'))] = cur.value
+      const camelifyKey = camelify(cur.path.join('.'))
+      const finalKey = MATCHES[camelifyKey] || camelifyKey
+
+      acc[finalKey] = cur.value
     }
     return acc
   }, {})

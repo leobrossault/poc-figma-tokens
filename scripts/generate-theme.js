@@ -3,9 +3,9 @@ const path = require('path')
 
 const tokens = require('../output/global.json')
 const { filterTokensByType } = require('../helpers/formats.js')
-const { camelify } = require('../helpers/string.js')
+const { BERLIOZ_THEME_FILE } = require('../constants/index.js')
 
-const TAILWIND_PATH = path.resolve(__dirname, '../tailwind.config.js')
+const OUTPUT_PATH = path.resolve(__dirname, `../output/${BERLIOZ_THEME_FILE}`)
 
 const registerTypes = function (tokens) {
   return Object.values(tokens).reduce((arr, token) => {
@@ -18,31 +18,26 @@ const registerTypes = function (tokens) {
 }
 
 function createTailwindConfig(sections) {
-  const config = {
-    purge: [],
-    darkMode: false,
-    theme: sections.reduce(
+  return JSON.stringify(
+    sections.reduce(
       (obj, section) => ({
         ...obj,
         [section]: filterTokensByType(section, tokens)
       }),
       {}
     ),
-    variants: {},
-    plugins: []
-  }
-
-  return `module.exports = ${JSON.stringify(config, null, 2)}`
+    null,
+    2
+  )
 }
 
 try {
-  if (fs.existsSync(TAILWIND_PATH)) {
-    // Clean tailwind.config.js
-    fs.unlinkSync(TAILWIND_PATH)
+  if (fs.existsSync(OUTPUT_PATH)) {
+    fs.unlinkSync(OUTPUT_PATH)
   }
 
   fs.writeFile(
-    TAILWIND_PATH,
+    OUTPUT_PATH,
     createTailwindConfig(registerTypes(tokens)),
     err => {
       if (err) {

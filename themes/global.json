@@ -12,5 +12,13 @@
     "value": 1000,
     "type": "sizing",
     "description": "un autre test"
+  },
+  "Rouge": {
+    "value": "#f82f2f",
+    "type": "color"
+  },
+  "blue": {
+    "value": "#2111e9",
+    "type": "color"
   }
 }
