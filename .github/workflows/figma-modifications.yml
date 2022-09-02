@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   build:
@@ -17,10 +14,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-      - name: Changed Files
+      - name: Check changed files
         uses: tj-actions/changed-files@v29.0.2
         with:
           files: |
             tokens.json
+      - name: Build tailwind.config
+        if: steps.changed-files-specific.outputs.any_changed == 'true'
         run: |
           npm install && npm run build-tw
