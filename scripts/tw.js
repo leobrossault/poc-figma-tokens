@@ -47,6 +47,8 @@ try {
     err => {
       if (err) {
         throw new Error(err)
+      } else {
+        console.log('Tailwind config created  🎉')
       }
     }
   )
