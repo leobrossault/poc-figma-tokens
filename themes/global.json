@@ -1,0 +1,11 @@
+{
+  "testColor": {
+    "value": "#21d513",
+    "type": "color"
+  },
+  "test title": {
+    "value": 100,
+    "type": "spacing",
+    "description": "default descr"
+  }
+}
