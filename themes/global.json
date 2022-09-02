@@ -20,5 +20,9 @@
   "blue": {
     "value": "#2111e9",
     "type": "color"
+  },
+  "pink": {
+    "value": "#ff20e9f2",
+    "type": "color"
   }
 }
