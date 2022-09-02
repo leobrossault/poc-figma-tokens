@@ -6,7 +6,8 @@
     "pink": "#ff20e9f2"
   },
   "fontFamily": {
-    "primary": "Arial"
+    "primary": "Arial",
+    "secondary": "Lato"
   },
   "sizing": {
     "m": "1000px"

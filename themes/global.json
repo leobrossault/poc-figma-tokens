@@ -32,5 +32,9 @@
   "primary": {
     "value": "Arial",
     "type": "fontFamilies"
+  },
+  "secondary": {
+    "value": "Lato",
+    "type": "fontFamilies"
   }
 }
