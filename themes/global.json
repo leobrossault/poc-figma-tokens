@@ -20,5 +20,17 @@
   "blue": {
     "value": "#2111e9",
     "type": "color"
+  },
+  "pink": {
+    "value": "#ff20e9f2",
+    "type": "color"
+  },
+  "l": {
+    "value": 300,
+    "type": "spacing"
+  },
+  "primary": {
+    "value": "Arial",
+    "type": "fontFamilies"
   }
 }

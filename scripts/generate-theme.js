@@ -3,7 +3,7 @@ const path = require('path')
 
 const tokens = require('../output/global.json')
 const { filterTokensByType } = require('../helpers/formats.js')
-const { BERLIOZ_THEME_FILE } = require('../constants/index.js')
+const { BERLIOZ_THEME_FILE, MATCHES } = require('../constants/index.js')
 
 const OUTPUT_PATH = path.resolve(__dirname, `../output/${BERLIOZ_THEME_FILE}`)
 
@@ -22,7 +22,7 @@ function createTailwindConfig(sections) {
     sections.reduce(
       (obj, section) => ({
         ...obj,
-        [section]: filterTokensByType(section, tokens)
+        [MATCHES[section] || section]: filterTokensByType(section, tokens)
       }),
       {}
     ),
