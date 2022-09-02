@@ -19,12 +19,6 @@ function deepen(obj) {
   return result
 }
 
-function createArray({ dictionary }) {
-  const arr = dictionary.allTokens
-
-  return JSON.stringify(arr)
-}
-
 function filterTokensByType(type, tokens) {
   const obj = tokens.reduce((acc, cur) => {
     if (cur.type === type) {
@@ -36,4 +30,4 @@ function filterTokensByType(type, tokens) {
   return deepen(obj)
 }
 
-module.exports = { createArray, filterTokensByType }
+module.exports = { filterTokensByType }

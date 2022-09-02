@@ -10,15 +10,20 @@ jobs:
     runs-on: ubuntu-latest
     name: Test changed-files
     steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
+
       - name: Check changed files
         uses: tj-actions/changed-files@v29.0.2
         with:
           files: |
             tokens.json
+
       - name: Build tailwind.config
         if: steps.changed-files-specific.outputs.any_changed == 'true'
         run: |
