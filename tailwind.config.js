@@ -14,6 +14,9 @@ module.exports = {
     },
     "sizing": {
       "m": 1000
+    },
+    "fontFamilies": {
+      "primary": "Arial"
     }
   },
   "variants": {},

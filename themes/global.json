@@ -28,5 +28,9 @@
   "l": {
     "value": 300,
     "type": "spacing"
+  },
+  "primary": {
+    "value": "Arial",
+    "type": "fontFamilies"
   }
 }
