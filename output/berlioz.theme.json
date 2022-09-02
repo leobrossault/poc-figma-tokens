@@ -13,6 +13,7 @@
     "m": 1000
   },
   "fontFamily": {
-    "primary": "Arial"
+    "primary": "Arial",
+    "secondary": "Lato"
   }
 }
