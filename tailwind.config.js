@@ -7,6 +7,9 @@ module.exports = {
     },
     "spacing": {
       "testTitle": 100
+    },
+    "sizing": {
+      "m": 1000
     }
   },
   "variants": {},

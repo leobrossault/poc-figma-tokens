@@ -7,5 +7,10 @@
     "value": 100,
     "type": "spacing",
     "description": "default descr"
+  },
+  "m": {
+    "value": 1000,
+    "type": "sizing",
+    "description": "un autre test"
   }
 }
